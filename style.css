@@ -1,64 +1,60 @@
-body{
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: hsl(0, 0%, 80%);
-    cursor:grab;
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(0, 0%, 80%);
+  cursor: grab;
 }
-#calculator{
-    font-family: sans-serif,Arial;
-    background-color: #FD99CB;
-    border-radius: 15px;
-    width:500px;
-    overflow: hidden;
+#calculator {
+  font-family: sans-serif, Arial;
+  background-color: #fd99cb;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+  overflow: hidden;
 }
-#Display{
-    width: 100%;
-    padding: 20px;
-    font-size: 5rem;
-    text-align: left;
-    border: none;
-    background-color: #F2E6FF;
-    color: black;
+#Display {
+  width: 100%;
+  padding: 20px;
+  font-size: 5rem;
+  text-align: left;
+  border: none;
+  background-color: #f2e6ff;
+  color: black;
 }
-#Keys{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 10px;
-    padding: 25px;
+#Keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 25px;
 }
-button{
-    width: 100px;
-    height: 100px;
-    border-radius: 50px;
-    border: none;
-    background-color:hsl(330, 95%, 83%);
-    color: #000000;
-    font-size: 3rem;
-    font-weight: bold;
-    cursor: grabbing;
+button {
+  width: 22vw; /* Adjusted to be responsive */
+  height: 22vw;
+  max-width: 100px; /* Prevents buttons from becoming too large on bigger screens */
+  max-height: 100px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(330, 95%, 83%);
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: grabbing;
 }
-button:hover{
-    background-color:hsl(330, 95%, 93%);
-
+button:hover {
+  background-color: hsl(330, 95%, 93%);
 }
-button:active{
-    background-color:hsl(330, 95%, 100%) ;
+button:active {
+  background-color: hsl(330, 95%, 100%);
 }
-.operator{
-    background-color: hsl(333, 97%, 62%);
+.operator {
+  background-color: hsl(333, 97%, 62%);
 }
-.operator:hover{
-    background-color: hsl(333, 97%, 72%);
+.operator:hover {
+  background-color: hsl(333, 97%, 72%);
 }
-.operator:active{
-    background-color: hsl(333, 97%, 82%);
+.operator:active {
+  background-color: hsl(333, 97%, 82%);
 }
-/* .operator:hover{
-    background-color:  hwb(0 0% 15%);
-}
-.operator:active{
-    background-color:  hwb(0 0% 0%);
-} */
