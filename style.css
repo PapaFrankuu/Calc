@@ -85,15 +85,3 @@ button:active {
   gap: 0px;
   padding: 25px;
 }
-p{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-family: fantasy;
-  color: #000000;
-  border-left: 1px solid black;
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
-  border-right: 1px solid black;
-}
