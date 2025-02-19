@@ -16,18 +16,25 @@ body {
   overflow: hidden;
 }
 #Display {
-  width: 100%;
+  width: 440px;
+  word-break: normal;
   padding: 20px;
-  font-size: 5rem;
+  font-size: 3rem;
   text-align: left;
-  border: none;
+  overflow: hidden;
+  border-left: 10px solid black;
+  border-top: 10px solid black;
+  border-bottom: 10px solid black;
+  border-right: 10px solid black; /* Adding right border */
   background-color: #f2e6ff;
   color: black;
+  
+  display: block;
 }
 #Keys {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
+  gap: 5px;
   padding: 25px;
 }
 button {
@@ -57,4 +64,36 @@ button:active {
 }
 .operator:active {
   background-color: hsl(333, 97%, 82%);
+}
+.equals {
+  float: right;
+  width: 100px; /* Adjusted to be responsive */
+  height: 150px;
+  max-width: 200px; /* Prevents buttons from becoming too large on bigger screens */
+  max-height: 200px;
+  border-radius: 55px;
+  border: none;
+  background-color: hsl(330, 95%, 83%);
+  color: #000000;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: grabbing;
+}
+#Eraser {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  padding: 25px;
+}
+p{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: fantasy;
+  color: #000000;
+  border-left: 1px solid black;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  border-right: 1px solid black;
 }
