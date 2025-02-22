@@ -14,7 +14,7 @@ body {
   border-radius: 15px;
   width: 100%;
   max-width: 500px;
-  overflow: visible;
+  overflow: hidden;
 }
 #Display {
   width: 440px;
@@ -23,7 +23,7 @@ body {
   padding: 20px;
   font-size: 3rem;
   text-align: left;
-  overflow:visible;
+  overflow:hidden;
   border-left: 10px solid black;
   border-top: 10px solid black;
   border-bottom: 10px solid black;
